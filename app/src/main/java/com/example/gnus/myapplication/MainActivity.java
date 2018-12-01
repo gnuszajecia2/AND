@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
+    /** Called when the user clicks the Licznik button */
+    public void openLicznik(View view) {
+        Intent intent = new Intent(this, LicznikActivity.class);
+        startActivity(intent);
+    }
 }
